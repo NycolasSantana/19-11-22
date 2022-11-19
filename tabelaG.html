@@ -21,6 +21,7 @@
         }
         table {
             margin: 15px;
+            position: relative;
         }
         td {
             padding: 10px;
@@ -34,15 +35,27 @@
         tfoot > tr > td {
             background-color: #d1d1d1;
         }
+        tbody > tr:nth-child(2n) {
+            background-color: blue;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+        }
+        p {
+            text-align: justify;
+            line-height: 100px;
+        }
     </style>
 </head>
 <body>
     <h1>População por estado do Brasil</h1>
     <table>
+        <caption>Unidades federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -61,10 +74,14 @@
         </tbody>
         <tfoot>
             <tr>
-                <td><strong>Total Habitantes</strong></td>
+                <th scope="row"><strong>Total Habitantes</strong></th scope="row">
                 <td><strong>-----</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel tempora impedit, molestias nesciunt, quaerat dicta, repudiandae illo sint autem veniam sed mollitia aliquam quidem! Vel porro temporibus saepe error incidunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio doloremque eos laborum expedita fugiat, molestiae itaque? Voluptate, itaque repellat accusantium explicabo adipisci non sequi ex nemo tempore consequuntur rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci, quam inventore consequuntur accusamus explicabo repellat culpa illum ratione similique quaerat nisi distinctio facilis qui eius quibusdam? Repellat, mollitia vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias id, necessitatibus quas a veniam exercitationem qui vel deleniti, ullam voluptate temporibus placeat amet in corporis, aliquam reprehenderit? Commodi, hic architecto. lo 
+        lo 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus aspernatur tempora culpa esse quia dolore consectetur laudantium provident sit ducimus illum consequuntur, harum, doloribus voluptatibus ad expedita modi? Maiores, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptas pariatur, illum ipsum impedit, libero dolorem mollitia dolore porro itaque ut autem asperiores molestiae saepe blanditiis. Quis neque veniam quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nihil sed, culpa et obcaecati ea magnam doloribus similique? Quos ipsum quis rerum vel ea explicabo nobis quo delectus! Fugit, recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae quidem recusandae possimus assumenda enim natus inventore. Id vitae voluptatem incidunt eos at ullam a laudantium blanditiis soluta ex. Adipisci? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi fugit exercitationem excepturi et modi obcaecati distinctio enim dignissimos. Minima animi laborum officiis voluptas! Nostrum labore quaerat illo facere quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quae distinctio, nostrum consequatur illum quod. Quibusdam expedita quisquam explicabo amet necessitatibus laudantium perferendis molestiae qui, cumque earum eius aperiam! Molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium fugit ad? Vero labore expedita, recusandae eius vel ducimus enim ullam nesciunt ad maiores necessitatibus harum officiis, fuga voluptas tenetur?
+    </p>
 </body>
 </html>
